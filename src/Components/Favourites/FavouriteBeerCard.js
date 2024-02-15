@@ -41,7 +41,7 @@ const FavouriteBeerCard = (props) => {
           {/* Remove button */}
           <button
             onClick={handleRemoveClick}
-            className="mt-2 text-sm py-2 px-3 font-semibold rounded-sm bg-red-600 hover:bg-red-500 focus:outline-none focus:ring focus:border-indigo-300"
+            className="mt-2 text-sm py-2 px-3 font-semibold tracking-wide rounded-sm bg-indigo-800 text-white hover:bg-red-900 hover:scale-110 "
           >
             Remove
           </button>

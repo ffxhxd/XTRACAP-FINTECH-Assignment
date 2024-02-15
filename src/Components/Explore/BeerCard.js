@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaHeart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -26,10 +27,6 @@ const BeerCard = (props) => {
       favourites.push({ id, name, first_brewed, description, image_url, ph });
       localStorage.setItem("favourites", JSON.stringify(favourites));
       setIsInFavourites(true);
-
-      // Notify user about successful addition to favorites
-      // const notify = () => toast.success("Added to Favourites");
-      // notify();
     } else {
       // Notify user if the beer is already in favorites
       const notify = () => toast.warning("Already in Favourites");
@@ -52,11 +49,11 @@ const BeerCard = (props) => {
       {/* Beer details */}
       <div className="flex flex-1 flex-col p-4 sm:p-6">
         {/* Beer name */}
-        <h2 className="mb-2 text-lg font-semibold text-gray-800">
+        <div className="mb-2 text-lg font-semibold text-gray-800">
           <div className="transition duration-100 hover:text-indigo-500 active:text-indigo-600">
             {name}
           </div>
-        </h2>
+        </div>
 
         {/* Beer description */}
         <p className="mb-4 text-sm text-gray-500 truncate">{description}</p>
@@ -73,16 +70,24 @@ const BeerCard = (props) => {
           </div>
 
           {/* Button to add to favorites */}
-          <button
-            onClick={handleAddToFavourites}
-            className="rounded border px-2 py-1 text-sm bg-indigo-700 font-medium text-white "
-          >
-            <FaHeart
-              className="hover:scale-110"
-              fill={isInFavourites ? "red" : "white"}
-              size={26}
-            />
-          </button>
+          <div className="flex items-center justify-center gap-2">
+            <Link
+              to={`/details/${id}`}
+              className="rounded border px-2 py-2 text-sm bg-indigo-700 font-medium text-white hover:bg-indigo-600"
+            >
+              Details
+            </Link>
+            <button
+              onClick={handleAddToFavourites}
+              className="rounded border px-2 py-1 text-sm bg-red-200 font-medium text-white "
+            >
+              <FaHeart
+                className="hover:scale-110"
+                fill={isInFavourites ? "red" : "white"}
+                size={26}
+              />
+            </button>
+          </div>
         </div>
       </div>
 

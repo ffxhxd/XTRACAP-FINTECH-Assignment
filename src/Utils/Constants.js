@@ -26,6 +26,7 @@ export const testimonialsData = [
 ];
 
 export const BEER_API_URL = "https://api.punkapi.com/v2/beers";
+export const SINGLE_BEER_API_URL = "https://api.punkapi.com/v2/beers/";
 
 export const ERROR_IMAGE_URL =
   "https://media1.tenor.com/m/XLryt4dYVWsAAAAC/tom-and-jerry-tom.gif";

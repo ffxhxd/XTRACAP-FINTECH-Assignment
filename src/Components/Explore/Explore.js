@@ -60,7 +60,7 @@ const Explore = () => {
         onClick={handleScrollToTop}
         className="fixed right-8 bg-indigo-800 p-2 rounded-full bottom-8 cursor-pointer z-10 hover:scale-110"
       >
-        <FaArrowUp className="animate-pulse" fill="white" size={30} />
+        <FaArrowUp className="animate-pulse" fill="white" size={40} />
       </div>
 
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
