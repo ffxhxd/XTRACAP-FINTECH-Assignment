@@ -1,4 +1,3 @@
-// BeerGrid.js
 import React from "react";
 import BeerCard from "./BeerCard";
 
