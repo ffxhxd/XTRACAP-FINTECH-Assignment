@@ -1,4 +1,3 @@
-// ScrollToTop.js
 import React from "react";
 import { FaArrowUp } from "react-icons/fa";
 
