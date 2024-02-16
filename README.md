@@ -3,7 +3,7 @@
 
 This is a web application that allows users to explore a list of beers, and details about them and view detailed information about each beer. Also you can save them to you favourites. There is also a search bar which allows users to search any beer they want The application is built using React.js.
 
-# Live website link : <https://65cedc1481086c7143b0ca04--silver-daffodil-9fc189.netlify.app/>
+# Live website link : <https://assignmentforxtracap.netlify.app/>
 ## Features
 
 - Home page : Represents the home page of our application, includes a hero section, featured and testimonials.
