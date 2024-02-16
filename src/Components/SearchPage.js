@@ -12,7 +12,6 @@ const SearchPage = () => {
   // Function to handle form submission
   const onSubmit = (e) => {
     e.preventDefault();
-    // Additional logic can be added here if needed
   };
 
   return (
