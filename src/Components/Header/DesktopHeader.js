@@ -22,6 +22,9 @@ const DesktopHeader = () => {
           <li className="hover:border-b border-black cursor-pointer">
             <Link to="/favourites">FAVOURITES</Link>
           </li>
+          <li className="hover:border-b border-black cursor-pointer">
+            <Link to="/search">SEARCH</Link>
+          </li>
         </ul>
       </div>
     </div>

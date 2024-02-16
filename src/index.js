@@ -8,6 +8,7 @@ import FavouritesPage from "./Components/Favourites/FavouritesPage";
 import ErrorPage from "./Components/ErrorPage";
 import Explore from "./Components/Explore/Explore";
 import BeerDetailPage from "./Components/BeerDetailPage";
+import SearchPage from "./Components/SearchPage";
 
 //defining routes for our beer application
 const appRoutes = createBrowserRouter([
@@ -26,6 +27,10 @@ const appRoutes = createBrowserRouter([
       {
         path: "/favourites",
         element: <FavouritesPage />,
+      },
+      {
+        path: "/search",
+        element: <SearchPage />,
       },
       {
         path: "/details/:id",

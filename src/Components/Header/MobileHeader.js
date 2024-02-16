@@ -17,7 +17,7 @@ const MobileHeader = ({ toggle, handleToggle }) => {
         {toggle ? <IoClose size={33} /> : <HiMenuAlt3 size={33} />}
       </div>
       {toggle && (
-        <div className="absolute top-16 right-0 p-6 bg-slate-900 h-56 z-10 flex items-center rounded-l">
+        <div className="absolute top-20 right-0 p-10 bg-slate-900 h-62 z-10 flex items-center rounded-l">
           <ul className="flex flex-col items-center font-bold gap-10 text-white text-sm tracking-wider">
             <li
               onClick={handleToggle}
@@ -36,6 +36,12 @@ const MobileHeader = ({ toggle, handleToggle }) => {
               className="hover:border-b border-black cursor-pointer"
             >
               <Link to="/favourites">FAVOURITES</Link>
+            </li>
+            <li
+              onClick={handleToggle}
+              className="hover:border-b border-black cursor-pointer"
+            >
+              <Link to="/search">SEARCH</Link>
             </li>
           </ul>
         </div>

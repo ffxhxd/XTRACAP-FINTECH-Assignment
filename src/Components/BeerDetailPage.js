@@ -8,7 +8,6 @@ import Loading from "./Loading";
 const BeerDetailPage = () => {
   const { id } = useParams();
   const data = useSingleBeer(id);
-  console.log(data);
 
   if (!data) {
     return <Loading />;

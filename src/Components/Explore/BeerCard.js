@@ -6,7 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 const BeerCard = (props) => {
   // Destructure beer data from props
-  const { name, first_brewed, description, image_url, id, ph } = props.beerdata;
+  const { name, first_brewed, description, image_url, id, ph } =
+    props?.beerdata;
 
   // State to track whether the beer is in favorites
   const [isInFavourites, setIsInFavourites] = useState(false);
